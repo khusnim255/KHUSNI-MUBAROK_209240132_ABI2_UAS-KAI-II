@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sayibana shof</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header/Navbar Responsive -->
+    <header class="shadow bg-white">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-orange-600">sayibana shof</h1>
+
+        <!-- Tombol Hamburger -->
+        <button
+          class="block md:hidden text-orange-600 focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <nav id="navbar-menu" class="hidden md:block">
+          <ul
+            class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-right md:text-left"
+          >
+            <li>
+              <a href="#home" class="text-gray-700 hover:text-orange-600 block"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#produk"
+                class="text-gray-700 hover:text-orange-600 block"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontak.html"
+                class="text-gray-700 hover:text-orange-600 block"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- Banner Promo -->
+      <div class="mb-8" id="home">
+        <img
+          src="bg/baner.PNG"
+          alt="Banner Promo"
+          class="w-full rounded-lg shadow"
+        />
+      </div>
+
+      <!-- Tabel Promo -->
+      <div class="overflow-x-auto mb-8">
+        <table class="table-auto w-full text-left bg-white shadow rounded-lg">
+          <thead class="bg-orange-500 text-white">
+            <tr>
+              <th class="px-4 py-2">Produk</th>
+              <th class="px-4 py-2">Diskon</th>
+              <th class="px-4 py-2">Harga Awal</th>
+              <th class="px-4 py-2">Harga Diskon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">NSilver Mist</td>
+              <td class="px-4 py-2">15%</td>
+              <td class="px-4 py-2">Rp80.000</td>
+              <td class="px-4 py-2">Rp45.000</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Charcoal</td>
+              <td class="px-4 py-2">15%</td>
+              <td class="px-4 py-2">Rp100.000</td>
+              <td class="px-4 py-2">Rp50.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Produk Section -->
+      <h2 id="produk" class="text-xl font-semibold mb-4 scroll-mt-20">
+        Sepatu Futsal Terbaru
+      </h2>
+      <div class="row">
+        <!-- Produk 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk 1.jpg"
+              class="card-img-top"
+              alt="Ortuseight Catalyst"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Emerald</h5>
+              <p class="card-text">
+                Rp39.000 - Sarung Batik Anak Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk1.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk 2.jpg"
+              class="card-img-top"
+              alt="Nike Tiempo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">⁠charcoal</h5>
+              <p class="card-text">
+                Rp50.000 - Sarung Batik Anak Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk2.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk  3.jpg"
+              class="card-img-top"
+              alt="Adidas Predator"
+            />
+            <div class="card-body">
+              <h5 class="card-title">⁠silver mist</h5>
+              <p class="card-text">
+                Rp45.000 - Sarung Batik Anak – Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk3.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk 4.jpg"
+              class="card-img-top"
+              alt="Specs Carnage"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Royal blue</h5>
+              <p class="card-text">
+                Rp35.000 - Sarung Batik Anak – Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk4.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk5.jpg"
+              class="card-img-top"
+              alt="Puma Ultra"
+            />
+            <div class="card-body">
+              <h5 class="card-title">⁠beige</h5>
+              <p class="card-text">
+                Rp40.000 - Sarung Batik Anak Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk5.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="gambar/produk 6.jpg"
+              class="card-img-top"
+              alt="Mills Vonix"
+            />
+            <div class="card-body">
+              <h5 class="card-title">⁠ivory white</h5>
+              <p class="card-text">
+                Rp45.000 - Sarung Batik Anak Nyaman, Lucu, dan Tradisional!.
+              </p>
+              <a href="produk6.html" class="btn btn-warning text-white"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="shadow mt-12">
+      <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+        <p>
+          Hubungi kami di: sayibana shof Bandung.com |6285723584850 | Jl.
+          Cijapati, Bandung
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script Toggle Navbar -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navbar-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerald - Sarung Batik Anak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar Responsive -->
+    <header class="shadow bg-white">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-orange-600">sayibana shofBandung</h1>
+        <button
+          class="block md:hidden text-orange-600 focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <nav id="navbar-menu" class="hidden md:block">
+          <ul
+            class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-right md:text-left"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-orange-600 block"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#produk"
+                class="text-gray-700 hover:text-orange-600 block"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontak.html"
+                class="text-gray-700 hover:text-orange-600 block"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Detail Produk -->
+    <main class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div>
+          <img
+            src="gambar/produk 1.jpg"
+            alt="Enerald"
+            class="w-full rounded-lg shadow"
+          />
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-3 text-orange-600">Emerald</h2>
+          <p class="mb-2 text-lg font-medium">Rp39.000</p>
+          <p class="mb-4 text-gray-700">
+            Sarung Batik Anak – Nyaman, Lucu, dan Tradisional!.
+          </p>
+
+          <!-- Tombol Beli -->
+          <a
+            href="https://wa.me/6285723584850?text=Halo%20saya%20ingin%20beli%20Emerald%20Sarung Batik Anak"
+            target="_blank"
+            class="btn btn-success mb-3 w-full md:w-auto"
+            >Beli Sekarang</a
+          ><br />
+          <a
+            href="index.html#produk"
+            class="btn btn-outline-warning w-full md:w-auto"
+            >← Kembali ke Produk</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="shadow mt-12 bg-white">
+      <div
+        class="container mx-auto px-4 py-6 text-center text-gray-600 text-sm"
+      >
+        <p>
+          Hubungi kami di: Adrian Sport Bandung.com | 6285723584850 | Jl.
+          Cijapati, Bandung
+        </p>
+      </div>
+    </footer>
+
+    <!-- Toggle Navbar Script -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navbar-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

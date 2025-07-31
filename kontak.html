@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | sayibana shof</title>
+    <script src="https://cdn.tailwindcss.com"></script<!DOCTYPE html>
+        <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Kontak | sayibana shof</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <!-- Header/Navbar Responsive -->
+            <header class="shadow bg-white">
+                <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                    <h1 class="text-2xl font-bold text-orange-600">sayibana shof</h1>
+        
+                    <!-- Tombol Hamburger -->
+                    <button class="block md:hidden text-orange-600 focus:outline-none" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+        
+                    <!-- Menu Navigasi -->
+                    <nav id="navbar-menu" class="hidden md:block">
+                        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-right md:text-left">
+                            <li><a href="index.html" class="text-gray-700 hover:text-orange-600 block">Home</a></li>
+                            <li><a href="index.html#produk" class="text-gray-700 hover:text-orange-600 block">Produk</a></li>
+                            <li><a href="kontak.html" class="text-gray-700 hover:text-orange-600 block">Kontak</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+            <!-- Konten Formulir Kontak -->
+            <main class="container mx-auto px-4 py-10">
+                <h2 class="text-2xl font-semibold mb-6 text-center">Hubungi Kami</h2>
+                <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+                    <form>
+                        <div class="mb-4">
+                            <label for="nama" class="block text-gray-700 font-medium mb-2">Nama</label>
+                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama lengkap" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="pesan" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="pesan" name="pesan" class="form-control" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning text-white">Kirim Pesan</button>
+                    </form>
+                </div>
+            </main>
+        
+            <!-- Footer -->
+            <footer class="shadow mt-12">
+                <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+                    <p>Hubungi kami di: Asayibana shof Bandung.com | 0857-2358-4850 | Jl. cijapati, Bandung</p>
+                </div>
+            </footer>
+        
+            <!-- Script Toggle Navbar -->
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("navbar-menu");
+                    menu.classList.toggle("hidden");
+                }
+            </script>
+        </body>
+        </html>
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-orange-600">sayibana shof</h1>
+            <nav>
+                <ul class="flex space-x-4 md:flex-row flex-col">
+                    <li><a href="index.html" class="text-gray-700 hover:text-orange-600">Home</a></li>
+                    <li><a href="index.html#produk" class="text-gray-700 hover:text-orange-600">Produk</a></li>
+                    <li><a href="kontak.html" class="text-gray-700 hover:text-orange-600">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Formulir Kontak -->
+    <main class="container mx-auto px-4 py-10">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Hubungi Kami</h2>
+        <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+            <form>
+                <div class="mb-4">
+                    <label for="nama" class="block text-gray-700 font-medium mb-2">Nama</label>
+                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama lengkap" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="nama@email.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="pesan" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                    <textarea id="pesan" name="pesan" class="form-control" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning text-white">Kirim Pesan</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="shadow mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+            <p>Hubungi kami di: sayibana shof Bandung.com | 0857-2358-4850 | Jl. Cijapati, Bandung</p>
+        </div>
+    </footer>
+</body>
+</html>
